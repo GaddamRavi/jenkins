@@ -1,8 +1,8 @@
 pipeline {
     agent any
     environment{
-        project="Expense"
-        com="Backend"
+        project = "Expense"
+        com = "Backend"
     }
     stages {
         stage('Build') {
