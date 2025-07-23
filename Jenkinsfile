@@ -1,11 +1,16 @@
 pipeline {
     agent any
+    environment{
+        project="Expense"
+        com="Backend"
+    }
     stages {
         stage('Build') {
             steps {
                script{
                  sh """
                     echo "Hello, this is build"
+                    echo "This is a $project"
                  """
                }
             }
@@ -15,6 +20,7 @@ pipeline {
                 script{
                  sh """
                     echo "Hello, this is test"
+                    echo "Testing is going on $com"
                  """
                 }
             }
