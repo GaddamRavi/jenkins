@@ -4,9 +4,7 @@ pipeline {
         project = "Expense"
         com = "Backend project"
     }
-    options {
-        disableConcurrentBuilds()
-        timeout(time: 20, unit: 'SECONDS')
+     
     }
   parameters{
         string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
