@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment{
         project = "Expense"
-        com = "Backend"
+        com = "Backend project"
     }
     options {
         disableConcurrentBuilds()
